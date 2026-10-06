@@ -12,9 +12,11 @@ It fixes two problems the game has had since WB shut down its online services in
 | GOG | 2015-12-01 | Tested: both fixes work |
 | Steam | 2015-10-22 | Tested: both fixes work |
 
+**Download:** [GitHub Releases](https://github.com/Alexxlml/MadMaxFix/releases/latest) or [Nexus Mods](https://www.nexusmods.com/madmax/mods/215).
+
 ## Installation
 
-1. Download the latest release and extract it.
+1. Download the latest release (GitHub or Nexus Mods) and extract it.
 2. Copy `XInput9_1_0.dll` and `MadMaxFix.ini` into the folder that contains `MadMax.exe`.
 3. If you use *MadMaxCrashFix* (`dinput8.dll` / `dxgi.dll`), you can remove it: this mod already handles the display-mode list. Do not combine it with another mod that also ships an `XInput9_1_0.dll`.
 4. Start the game. A `MadMaxFix.log` file is written next to the game with what the mod did.
