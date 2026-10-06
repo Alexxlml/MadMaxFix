@@ -1,0 +1,13 @@
+# Build output
+out/
+*.lib
+*.obj
+*.log
+__pycache__/
+
+# Local research material (not part of the published mod)
+CLAUDE/
+logs/
+releases/
+tools/
+src/diag/
