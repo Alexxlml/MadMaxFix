@@ -79,7 +79,7 @@ A common complaint is that exhaust upgrades (and top speed hood ornaments) "do n
 
 - Exhausts and top speed hood ornaments only raise a **top speed cap** (`AeroSpeedCap = max top speed × upgrade ratio`).
 - The gearbox is computed separately, from the speed where engine power can no longer overcome aerodynamic drag. The top gear reaches the rev limiter at that speed, and the exhaust is not part of that calculation.
-- So the exhaust only matters when the car is fast enough to reach the cap. With heavy armor, ram and protection bars, the car tops out on power and drag first, and the exhaust makes no visible difference. With a light build (no armor, best engine and exhaust, like the *Speed Freak* archangel), the car does reach the cap and the exhaust bonus is clearly noticeable.
+- So the exhaust only matters when the car is fast enough to reach the cap. With heavy armor, ram and protection bars, the car tops out on power and drag first, and the exhaust makes no visible difference. With a light build (base-level armor and ram, maxed V8, exhaust and tires, like the *Speed Freak* archangel), the car does reach the cap and the exhaust bonus is clearly noticeable.
 
 Changing this would mean rebalancing the cars (longer gears also mean less pulling power, which hurts heavy builds on hills). If you want a different balance, [Vehicle tuning and upgrade overhaul](https://www.nexusmods.com/madmax/mods/170) by ThinRedPaste changes how these upgrades work. It installs in `dropzone` and can be used together with MadMaxFix.
 
