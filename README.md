@@ -73,6 +73,16 @@ The amount is based on the **real time the game was closed**. The game already m
 - **High frame rates:** above 75 FPS, opening the in-game MAX menu while running or driving can leave Max's model in the menu stuck in his running/driving pose, and above ~120 FPS the audio may crackle slightly. These are separate engine issues that this mod does not fix. Capping the game at 75 FPS (for example with RTSS or your GPU driver) avoids the menu issue.
 - Only the two executable builds listed above are supported.
 
+## Notes: exhausts, hood ornaments and top speed
+
+A common complaint is that exhaust upgrades (and top speed hood ornaments) "do nothing". This is **not changed by MadMaxFix**, because it turned out to be how the game was designed rather than a broken feature:
+
+- Exhausts and top speed hood ornaments only raise a **top speed cap** (`AeroSpeedCap = max top speed × upgrade ratio`).
+- The gearbox is computed separately, from the speed where engine power can no longer overcome aerodynamic drag. The top gear reaches the rev limiter at that speed, and the exhaust is not part of that calculation.
+- So the exhaust only matters when the car is fast enough to reach the cap. With heavy armor, ram and protection bars, the car tops out on power and drag first, and the exhaust makes no visible difference. With a light build (no armor, best engine and exhaust, like the *Speed Freak* archangel), the car does reach the cap and the exhaust bonus is clearly noticeable.
+
+Changing this would mean rebalancing the cars (longer gears also mean less pulling power, which hurts heavy builds on hills). If you want a different balance, [Vehicle tuning and upgrade overhaul](https://www.nexusmods.com/madmax/mods/170) by ThinRedPaste changes how these upgrades work. It installs in `dropzone` and can be used together with MadMaxFix.
+
 ## Building from source
 
 Requirements: Python 3 and Zig through pip (`pip install ziglang`). Zig is used as a C cross compiler and ships the MinGW headers, so Visual Studio is not needed.
